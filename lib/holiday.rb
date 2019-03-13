@@ -65,13 +65,13 @@ def all_supplies_in_holidays(holiday_hash)
     final_str += "#{season_str}:\n"
 
     holidays.each do |holiday, supplies|
-      holiday_name = holiday.to_s.split("_")
+      holiday_name = holiday.to_s.split("_").collect{|x| x.capitalize}.join(" ")
 
-      holiday_name.each do |x|
-        x.capitalize!
-      end
+      # holiday_name.each do |x|
+      #   x.capitalize!
+      # end
       
-      holiday_name = holiday_name.join(" ")
+      # holiday_name = holiday_name.join(" ")
 
       holiday_str = "\t#{holiday_name}: "
 
