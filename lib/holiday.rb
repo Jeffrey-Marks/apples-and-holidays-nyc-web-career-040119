@@ -47,7 +47,6 @@ def all_winter_holiday_supplies(holiday_hash)
   all_supplies
 end
 
-<<<<<<< HEAD
 
 def all_supplies_in_holidays(holiday_hash)
   final_str = ""
@@ -55,7 +54,8 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     season_str = season.capitalize.to_s
     final_str += "#{season_str}:\n"
-=======
+  end
+end
 
 def all_supplies_in_holidays(holiday_hash)
   final_str = ""
